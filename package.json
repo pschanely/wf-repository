@@ -1,0 +1,31 @@
+{
+  "name": "wf-repository",
+  "version": "0.1.0",
+  "description": "A simple node.js server for storing Wildflower code",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "wildflowerrepo": "repository.js"
+  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pschanely/wf-repository.git"
+  },
+  "keywords": [
+    "Wildflower",
+    "server",
+    "repository"
+  ],
+  "author": "Phillip Schanely <pschanely@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pschanely/wf-repository/issues"
+  },
+  "homepage": "https://github.com/pschanely/wf-repository",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "request": "^2.61.0",
+    "restify": "^4.0.2"
+  }
+}
