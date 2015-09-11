@@ -7,7 +7,7 @@
   },
   "bin": {
     "wildflowerrepo": "repository.js"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/pschanely/wf-repository.git"
