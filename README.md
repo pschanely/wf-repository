@@ -1,6 +1,13 @@
 # wf-repository
-This is a simple node.js server for storing Wildflower code.
+This is a simple node.js server for storing [Wildflower](https://github.com/pschanely/wildflower) code.
 It will store Wildflower modules in an elasticsearch index named "modules" with type "module".
+
+To set up the elasticsearch index, use this:
+```
+curl -XPOST 'http://localhost:9200/modules' --data-binary "@modules.mapping.json"
+```
+
+Then, you can run your server like so:
 
 ```
 node repository.js --elasticsearch=http://localhost:9200 --listenPort=11739 --cors

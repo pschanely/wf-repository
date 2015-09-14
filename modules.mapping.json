@@ -1,0 +1,22 @@
+{
+    "mappings": {
+        "module": {
+            "analyzer": "keyword",
+            "dynamic_templates": [
+		{"LiteralsAsStrings": {
+		    "match": "*.val",
+		    "mapping": {"type": "string"}
+		}},
+		{"NamesAnalyzed": {
+		    "match": "*.name",
+		    "mapping": {"type": "string", "analyzer":"standard"}
+		}},
+		{"CommentsAnalyzed": {
+		    "match": "*.comment",
+		    "mapping": {"type": "string", "analyzer":"standard"}
+		}}
+	    ]
+	}
+    }
+}
+
