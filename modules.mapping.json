@@ -4,15 +4,15 @@
             "analyzer": "keyword",
             "dynamic_templates": [
 		{"LiteralsAsStrings": {
-		    "match": "*.val",
+		    "path_match": "*.val",
 		    "mapping": {"type": "string"}
 		}},
 		{"NamesAnalyzed": {
-		    "match": "*.name",
+		    "path_match": "*.name",
 		    "mapping": {"type": "string", "analyzer":"standard"}
 		}},
 		{"CommentsAnalyzed": {
-		    "match": "*.comment",
+		    "path_match": "*.comment",
 		    "mapping": {"type": "string", "analyzer":"standard"}
 		}}
 	    ]
